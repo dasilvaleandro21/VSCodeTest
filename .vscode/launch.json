@@ -1,0 +1,18 @@
+{
+    "configurations": [
+        {
+            "name": "Debug with OpenOCD",
+            "cwd": "${workspaceRoot}",
+            "executable": "./build/VSCodeTest.elf",
+            "request": "launch",
+            "type": "cortex-debug",
+            "servertype": "openocd",
+            "device": "STM32F411",
+            "configFiles": [
+                "interface/stlink.cfg",
+                "target/stm32f4x.cfg"
+            ],
+            "svdFile": "./STM32F411.svd"
+        }
+    ]
+}
